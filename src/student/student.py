@@ -22,11 +22,22 @@ def a():
     print a is d
     print a == e
     print a is e
-    
-if __name__ == '__main__':
+def b():
+    a = [1,2,"abc"]
+    b = [2,1,"abc"]
+    c = a 
+    d = [1,2,"abc"]
+    print a == b    #false,对应的值不相等；
+    print a == c ,a is c  #a==c true对应值相等；a is c True两个为同一个对象
+    print a == d , a is d  #a==d true对应值相等；a is d False两个不为同一个对象
+def c():
     a = 1000
     b = 1000
     c =  1.5
     d = 1.5
     print a is b,id(a),id(b)   #a is b相当于id(a) == id(b) 即a和b为同一个对象，比较结果应该为false，但由于python缓存原因导致结果为false
     print c is d,id(c),id(d)   #详见《python核心编程》第63页 
+    
+    
+if __name__ == '__main__':
+   b()
