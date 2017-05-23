@@ -9,8 +9,9 @@ Created on 2017年5月22日
 class MyClass(object):
     def __init__(self, name):
         self.name = name
-    def __eq__(self,o):
-        return self.name == o.name
+        self.t = 1;
+#     def __eq__(self,o):
+#         return self.name == ""
     def __cmp__(self, other):
         return cmp(self.name, other.name)
 

@@ -5,6 +5,7 @@ Created on May 21, 2017
 
 @author: Administrator
 '''
+from types import IntType
 class acls:
     def __init__(self):
         self.a = 1  

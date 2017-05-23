@@ -37,7 +37,16 @@ def c():
     d = 1.5
     print a is b,id(a),id(b)   #a is b相当于id(a) == id(b) 即a和b为同一个对象，比较结果应该为false，但由于python缓存原因导致结果为false
     print c is d,id(c),id(d)   #详见《python核心编程》第63页 
+class A(object):
+    def __init__(self, name):
+        self.name = name
     
+    def __eq__(self, obj):
+        return self.name == obj.name
+def d():
+    a = A("Leon")
+    b = A("Leon")
+    print a == b
     
 if __name__ == '__main__':
-   b()
+   d()
