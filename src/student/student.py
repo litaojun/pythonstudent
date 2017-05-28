@@ -40,7 +40,7 @@ def c():
 class A(object):
     def __init__(self, name):
         self.name = name
-        print name
+        print lambda x:x+name
     
     def __eq__(self, obj):
         return self.name == obj.name
