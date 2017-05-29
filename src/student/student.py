@@ -7,7 +7,9 @@ Created on May 21, 2017
 '''
 #is == 区别
 import types
-def bb():pass
+def bb():
+    print "aaaaa"
+    print "bbbbb"
 def cc():pass
 def dd():pass
 def a():
