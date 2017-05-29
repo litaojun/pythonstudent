@@ -10,6 +10,7 @@ import types
 def aa():pass
 def bb():pass
 def cc():pass
+def dd():pass
 def a():
     a = "abc"
     b = "abc"
