@@ -9,7 +9,7 @@ Created on May 21, 2017
 import types
 def bb():
     print "aaaaa"
-    print "bbbbb"
+    print "ttttt"
 def cc():pass
 def dd():pass
 def a():
