@@ -10,6 +10,8 @@ import types
 def bb():
     print "aaaaa"
     print "ttttt"
+    print "eeeeee"
+    print "bbbbb"
 def cc():pass
 def dd():pass
 def a():
