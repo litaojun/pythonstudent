@@ -7,6 +7,9 @@ Created on May 21, 2017
 '''
 #is == 区别
 import types
+def aa():pass
+def bb():pass
+def cc():pass
 def a():
     a = "abc"
     b = "abc"
