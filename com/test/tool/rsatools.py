@@ -8,7 +8,8 @@ Created on 2017年9月11日
 import rsa
 #https://stuvel.eu/python-rsa-doc/index.html
 # 生成密钥
-rsa.newkeys(2048,8)
+print dir(rsa)
+
 (pubkey, privkey) = rsa.newkeys(1024)
 
 
